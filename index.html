@@ -836,6 +836,17 @@ function submitOptin() {
   S.firstName = name;
   S.email = email;
 
+  fetch('https://services.leadconnectorhq.com/hooks/ucphPUkSafuQF0ZCZh1T/webhook-trigger/54531478-e2bc-406b-9500-35242e28e4ff', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      firstName: name,
+      email: email,
+      quizResult: getProfile(),
+      source: 'soul-prosperity-quiz-all-in-one'
+    })
+  }).catch(() => {});
+
   document.querySelectorAll('.q-screen').forEach(q => q.classList.remove('active'));
   const loader = document.getElementById('quizLoading');
   loader.classList.add('active');
