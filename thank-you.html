@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're In — Soul Prosperity</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1655287592408855');
+fbq('track', 'PageView');
+fbq('track', 'Purchase');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #0d0c0a;
+  --cream: #f5f0e8;
+  --gold: #c9963a;
+  --gold-light: #f0c96a;
+  --muted: #6b6460;
+  --success: #2ecc71;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--ink);
+  color: var(--cream);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,150,58,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 80% 100%, rgba(201,150,58,0.05) 0%, transparent 60%);
+  pointer-events: none; z-index: 0;
+}
+
+/* ── NAV ── */
+nav {
+  display: flex; justify-content: center; align-items: center;
+  padding: 24px 48px;
+  border-bottom: 1px solid rgba(201,150,58,0.12);
+  position: relative; z-index: 10;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; color: var(--gold); letter-spacing: 0.02em;
+}
+
+/* ── MAIN ── */
+main {
+  position: relative; z-index: 1;
+  max-width: 680px; margin: 0 auto;
+  padding: 64px 32px 80px;
+  text-align: center;
+}
+
+/* ── CONFIRM BADGE ── */
+.confirm-ring {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: rgba(46,204,113,0.08);
+  border: 1px solid rgba(46,204,113,0.3);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 28px;
+  animation: popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both;
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── TEXT ── */
+.eyebrow {
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500; margin-bottom: 16px;
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.2s;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 6vw, 52px);
+  font-weight: 900; line-height: 1.1;
+  color: var(--cream); margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.35s;
+}
+h1 em { font-style: italic; color: var(--gold); }
+.lede {
+  font-size: 17px; line-height: 1.75; color: #b8ad9e;
+  margin-bottom: 48px;
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.5s;
+}
+
+/* ── NEXT STEPS CARD ── */
+.steps-card {
+  background: linear-gradient(145deg, #1a1612, #0f0e0b);
+  border: 1px solid rgba(201,150,58,0.18);
+  border-radius: 16px; padding: 36px 32px;
+  text-align: left; margin-bottom: 36px;
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.6s;
+}
+.steps-label {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500; margin-bottom: 24px;
+}
+.step-list { list-style: none; display: flex; flex-direction: column; gap: 22px; }
+.step-item { display: flex; gap: 16px; align-items: flex-start; }
+.step-num {
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+  background: rgba(201,150,58,0.1); border: 1px solid rgba(201,150,58,0.25);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 500; color: var(--gold); margin-top: 2px;
+}
+.step-body { font-size: 15px; color: #c8bfb3; line-height: 1.65; }
+.step-body strong { color: var(--cream); font-weight: 500; display: block; margin-bottom: 4px; font-size: 15px; }
+
+/* ── SCRIPTURE ── */
+.scripture {
+  border-top: 1px solid rgba(201,150,58,0.1);
+  padding-top: 32px; margin-bottom: 40px;
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.75s;
+}
+.scripture-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px; font-style: italic;
+  color: rgba(201,150,58,0.85); line-height: 1.6;
+  margin-bottom: 8px;
+}
+.scripture-ref { font-size: 12px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* ── BUTTONS ── */
+.cta-group {
+  display: flex; flex-direction: column; gap: 14px; align-items: center;
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.85s;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--gold); color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px; font-weight: 500; letter-spacing: 0.04em;
+  padding: 17px 44px; border-radius: 4px; border: none;
+  cursor: pointer; text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,150,58,0.3); }
+.btn-ghost {
+  font-size: 13px; color: var(--muted); text-decoration: none;
+  border-bottom: 1px solid rgba(107,100,96,0.3);
+  padding-bottom: 2px; transition: color 0.2s, border-color 0.2s;
+}
+.btn-ghost:hover { color: var(--gold); border-color: rgba(201,150,58,0.5); }
+
+/* ── SOCIAL ── */
+.social-row {
+  margin-top: 52px; padding-top: 32px;
+  border-top: 1px solid rgba(201,150,58,0.08);
+  opacity: 0; animation: fadeUp 0.5s ease forwards 1s;
+}
+.social-label { font-size: 12px; color: var(--muted); margin-bottom: 16px; letter-spacing: 0.04em; }
+.social-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.social-link {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,150,58,0.12);
+  border-radius: 8px; padding: 10px 18px;
+  font-size: 13px; color: #9a9088; text-decoration: none;
+  transition: all 0.2s;
+}
+.social-link:hover { border-color: rgba(201,150,58,0.3); color: var(--cream); background: rgba(201,150,58,0.05); }
+
+/* ── FOOTER ── */
+footer {
+  position: relative; z-index: 1;
+  text-align: center; padding: 24px 48px 40px;
+  font-size: 11px; color: rgba(107,100,96,0.5);
+  line-height: 1.8; border-top: 1px solid rgba(201,150,58,0.07);
+}
+footer a { color: rgba(107,100,96,0.6); text-decoration: none; transition: color 0.2s; }
+footer a:hover { color: var(--gold); }
+
+@media (max-width: 560px) {
+  main { padding: 48px 20px 60px; }
+  .steps-card { padding: 28px 20px; }
+  nav { padding: 20px 24px; }
+  h1 { font-size: 34px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Soul Prosperity</div>
+</nav>
+
+<main>
+
+  <!-- CHECK MARK -->
+  <div class="confirm-ring">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+      <circle cx="18" cy="18" r="17" stroke="#2ecc71" stroke-width="1.5"/>
+      <path d="M10 18.5l5.5 5.5 10.5-11" stroke="#2ecc71" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <p class="eyebrow">Purchase confirmed</p>
+
+  <h1>You're in.<br>Now let's <em>build.</em></h1>
+
+  <p class="lede">
+    Check your inbox — your access link and everything you need is already on its way.
+    Here's exactly what to do next so you don't lose momentum.
+  </p>
+
+  <!-- NEXT STEPS -->
+  <div class="steps-card">
+    <p class="steps-label">What happens next</p>
+    <ul class="step-list">
+      <li class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Check your email now</strong>
+          Your receipt and download link are in your inbox. If you don't see it within 5 minutes, check your spam folder and mark it as not spam.
+        </div>
+      </li>
+      <li class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Open it today — not tomorrow</strong>
+          Don't wait for the "right time." Open the material, read Chapter 1, and write down your 12 chapter titles before you close the tab. That's your whole book in one page.
+        </div>
+      </li>
+      <li class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Join the community (free for 7 days)</strong>
+          The Money Masters Academy is where you'll get live coaching calls, accountability partners, and builders who are operating at your level. First week is on us.
+        </div>
+      </li>
+      <li class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Write down your 7-day goal</strong>
+          One specific thing you will have done 7 days from today. Habakkuk 2:2 — write the vision and make it plain. That's how this starts.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SCRIPTURE -->
+  <div class="scripture">
+    <p class="scripture-text">"The plans of the diligent lead surely to abundance."</p>
+    <p class="scripture-ref">Proverbs 21:5</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-group">
+    <a href="https://skool.com/money-masters-academy-5443/about"
+       class="btn-primary" target="_blank">
+      Join the Community Free →
+    </a>
+    <a href="https://gmoney0112-create.github.io/soul-prosperity/"
+       class="btn-ghost">
+      Back to Soul Prosperity
+    </a>
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="social-row">
+    <p class="social-label">Follow the Kingdom journey</p>
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@soulprosperity" class="social-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+        </svg>
+        TikTok
+      </a>
+      <a href="https://www.instagram.com/soulprosperity" class="social-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/soulprosperity" class="social-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+        </svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Soul Prosperity · Kingdom Systems for Blue-Collar Christian Business Owners<br>
+  <a href="https://soulprosperity.com/privacy" target="_blank">Privacy Policy</a> ·
+  <a href="https://soulprosperity.com/terms" target="_blank">Terms</a> ·
+  30-Day Money-Back Guarantee on all products
+</footer>
+
+</body>
+</html>
