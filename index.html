@@ -3,18 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What's Your Kingdom Business Stage? · Soul Prosperity</title>
-<meta name="description" content="Take this free 60-second assessment and discover exactly what's blocking your Kingdom business — plus a personalized 4-step roadmap built for where you are right now." />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Soul Prosperity" />
-<meta property="og:title" content="What's Your Kingdom Business Stage? · Soul Prosperity" />
-<meta property="og:description" content="Take this free 60-second assessment and discover exactly what's blocking your Kingdom business — plus a personalized 4-step roadmap built for where you are right now." />
-<meta property="og:url" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/" />
-<meta property="og:image" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/og-image.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="What's Your Kingdom Business Stage? · Soul Prosperity" />
-<meta name="twitter:description" content="Take this free 60-second assessment and discover exactly what's blocking your Kingdom business — plus a personalized 4-step roadmap built for where you are right now." />
-<meta name="twitter:image" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/og-image.jpg" />
+<title>What's Your Kingdom Business Stage? — Soul Prosperity</title>
+
+<!-- ── OG / SOCIAL META ── -->
+<meta name="description" content="Take the free 60-second Kingdom Business Assessment and discover exactly where you are — and the #1 resource to move you forward this week.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What's Your Kingdom Business Stage? — Soul Prosperity">
+<meta property="og:description" content="Answer 6 questions. Get a personalized Kingdom roadmap. Free for blue-collar Christian business owners.">
+<meta property="og:image" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/og-image.png">
+<meta property="og:url" content="https://quiz.soulprosperity.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What's Your Kingdom Business Stage?">
+<meta name="twitter:description" content="Free 60-second assessment for blue-collar Christian business owners.">
+<meta name="twitter:image" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/og-image.png">
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1655287592408855');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"/></noscript>
+
+<!-- ── GOOGLE ANALYTICS — replace G-XXXXXXXXXX with your GA4 ID ── -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -97,9 +122,9 @@ nav {
   from { opacity: 0; } to { opacity: 1; }
 }
 
-/* ─────────────────────────────────────────
+/* ═══════════════════════════════════════════
    PAGE 1: LANDING
-───────────────────────────────────────── */
+═══════════════════════════════════════════ */
 #page-landing .hero {
   position: relative;
   padding: 80px 48px 60px;
@@ -131,7 +156,7 @@ nav {
 
 .promise-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 48px; }
 .promise-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--cream); line-height: 1.5; }
-.promise-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.promise-list li::before { content: '→'; color: var(--gold); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
 .cta-sub { display: block; margin-top: 12px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
 
@@ -233,9 +258,9 @@ nav {
 
 footer { padding: 32px 48px; border-top: 1px solid rgba(201,150,58,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted); }
 
-/* ─────────────────────────────────────────
+/* ═══════════════════════════════════════════
    PAGE 2: QUIZ
-───────────────────────────────────────── */
+═══════════════════════════════════════════ */
 #page-quiz {
   min-height: 100vh;
   display: none;
@@ -317,9 +342,9 @@ footer { padding: 32px 48px; border-top: 1px solid rgba(201,150,58,0.1); display
 .loading-headline { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--muted); font-style: italic; margin-bottom: 8px; }
 .loading-sub { font-size: 14px; color: rgba(107,100,96,0.7); }
 
-/* ─────────────────────────────────────────
+/* ═══════════════════════════════════════════
    PAGE 3: RESULTS
-───────────────────────────────────────── */
+═══════════════════════════════════════════ */
 #page-results {
   min-height: 100vh;
 }
@@ -371,9 +396,9 @@ footer { padding: 32px 48px; border-top: 1px solid rgba(201,150,58,0.1); display
 .bump-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
 .bump-price { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--gold); white-space: nowrap; margin-left: auto; flex-shrink: 0; }
 
-/* ─────────────────────────────────────────
+/* ═══════════════════════════════════════════
    PAGE 4: UPSELL
-───────────────────────────────────────── */
+═══════════════════════════════════════════ */
 .upsell-wrap { max-width: 700px; margin: 0 auto; padding: 60px 32px 80px; text-align: center; }
 .congrats-bar { background: rgba(201,150,58,0.1); border: 1px solid rgba(201,150,58,0.25); border-radius: 8px; padding: 14px 24px; font-size: 13px; color: var(--gold); font-weight: 500; margin-bottom: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 20px; }
@@ -424,32 +449,6 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
   .upsell-wrap { padding: 40px 20px 60px; }
 }
 </style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1655287592408855');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJDX8ME2F9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-WJDX8ME2F9');
-</script>
 </head>
 <body>
 
@@ -458,9 +457,9 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
   <span class="nav-tag">Free Kingdom Assessment</span>
 </nav>
 
-<!-- ─────────────────────────────────────────
+<!-- ═══════════════════════════════════════════
      PAGE 1: LANDING
-───────────────────────────────────────── -->
+═══════════════════════════════════════════ -->
 <div class="page active" id="page-landing">
 
   <section id="page-landing" style="display:contents">
@@ -503,7 +502,7 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
               <div><div class="persona-name">The Kingdom Operator</div><div class="persona-sub">Running. Needs systems to scale.</div></div>
             </li>
             <li class="persona-item" onclick="goToQuiz()">
-              <div class="persona-icon">🚀</div>
+              <div class="persona-icon">👑</div>
               <div><div class="persona-name">The Kingdom Scaler</div><div class="persona-sub">Ready to build a lasting legacy.</div></div>
             </li>
           </ul>
@@ -542,7 +541,7 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
         <div class="type-card"><span class="type-emoji">🌱</span><div class="type-name">Kingdom Seedling</div><span class="type-tag">Most common starting point</span><p class="type-desc">You have the faith and the vision. You haven't figured out how to turn it into income. The block isn't ability — it's clarity and a starting point.</p></div>
         <div class="type-card"><span class="type-emoji">🔨</span><div class="type-name">Grinding Builder</div><span class="type-tag">Has momentum, needs consistency</span><p class="type-desc">You've proven the concept and made some money. But income is inconsistent and you're still doing everything manually. You need a system, not more hustle.</p></div>
         <div class="type-card"><span class="type-emoji">⚙️</span><div class="type-name">Kingdom Operator</div><span class="type-tag">Closest to real scale</span><p class="type-desc">You're running a real business but you're the bottleneck. Every decision goes through you. It's time to build Kingdom Systems — not just a job you own.</p></div>
-        <div class="type-card"><span class="type-emoji">🚀</span><div class="type-name">Kingdom Scaler</div><span class="type-tag">Ready to build legacy</span><p class="type-desc">You're past the basics and ready to build something that outlives you. You need community, accountability, and a repeatable system to get to the next level.</p></div>
+        <div class="type-card"><span class="type-emoji">👑</span><div class="type-name">Kingdom Scaler</div><span class="type-tag">Ready to build legacy</span><p class="type-desc">You're past the basics and ready to build something that outlives you. You need community, accountability, and a repeatable system to get to the next level.</p></div>
       </div>
     </div>
   </div>
@@ -574,14 +573,14 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
 
   <footer>
     <span>© 2026 Soul Prosperity · Kingdom Systems for Blue-Collar Christian Business Owners</span>
-    <span>Privacy Policy · Terms · 30-Day Money-Back Guarantee</span>
+    <span><a href="https://soulprosperity.com/privacy" style="color:var(--muted);text-decoration:none;" target="_blank">Privacy Policy</a> · <a href="https://soulprosperity.com/terms" style="color:var(--muted);text-decoration:none;" target="_blank">Terms</a> · 30-Day Money-Back Guarantee</span>
   </footer>
   </section>
 </div>
 
-<!-- ─────────────────────────────────────────
+<!-- ═══════════════════════════════════════════
      PAGE 2: QUIZ
-───────────────────────────────────────── -->
+═══════════════════════════════════════════ -->
 <div class="page" id="page-quiz">
   <div class="quiz-shell">
 
@@ -705,9 +704,9 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
   </div>
 </div>
 
-<!-- ─────────────────────────────────────────
+<!-- ═══════════════════════════════════════════
      PAGE 3: RESULTS
-───────────────────────────────────────── -->
+═══════════════════════════════════════════ -->
 <div class="page" id="page-results">
   <div class="results-wrap">
 
@@ -718,7 +717,7 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
     </div>
 
     <div class="result-section" style="animation-delay:0.1s">
-      <div class="section-icon">🪞</div>
+      <div class="section-icon">🔍</div>
       <p class="section-heading">What this really means</p>
       <p class="section-text" id="rMirror"></p>
     </div>
@@ -773,9 +772,9 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
   </div>
 </div>
 
-<!-- ─────────────────────────────────────────
+<!-- ═══════════════════════════════════════════
      PAGE 4: UPSELL
-───────────────────────────────────────── -->
+═══════════════════════════════════════════ -->
 <div class="page" id="page-upsell">
   <div class="upsell-wrap">
     <div class="congrats-bar">✓ Your purchase is confirmed — check your email for instant access</div>
@@ -788,7 +787,7 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
     <div class="offer-card">
       <h2 class="what-youll-get">Everything in the AI Kingdom Business System:</h2>
       <ul class="feature-list">
-        <li class="feature-item"><div class="feature-icon">🤖</div><div><div class="feature-title">100+ AI Writing &amp; Business Prompts</div><div class="feature-desc">Chapter openers, sales copy, email sequences, and social hooks — one prompt for every step of your Kingdom business build.</div></div></li>
+        <li class="feature-item"><div class="feature-icon">🤖</div><div><div class="feature-title">100+ AI Writing & Business Prompts</div><div class="feature-desc">Chapter openers, sales copy, email sequences, and social hooks — one prompt for every step of your Kingdom business build.</div></div></li>
         <li class="feature-item"><div class="feature-icon">📋</div><div><div class="feature-title">Kingdom Systems Blueprint Templates</div><div class="feature-desc">Fill-in-the-blank automation maps, funnel structures, and GHL workflow diagrams for all four Kingdom Stages.</div></div></li>
         <li class="feature-item"><div class="feature-icon">💰</div><div><div class="feature-title">Sales Copy Toolkit</div><div class="feature-desc">Landing page headlines, email subject lines, and social media hooks written for blue-collar Christian entrepreneurs.</div></div></li>
         <li class="feature-item"><div class="feature-icon">🎯</div><div><div class="feature-title">7-Day Launch Checklist + Timeline</div><div class="feature-desc">A step-by-step daily plan from "blank page" to "first sale" — know exactly what to do every morning.</div></div></li>
@@ -818,7 +817,7 @@ src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"
 const S = { answers: {}, firstName: '', email: '', profile: '', bumpChecked: false };
 const qOrder = ['q1','q2','q3','q4','q5','q6','qOptin'];
 
-// ─── PAGE NAVIGATION ────────────────────────────────────────
+// ─── PAGE NAVIGATION ───────────────────────────────────────
 function showPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById(id).classList.add('active');
@@ -831,7 +830,7 @@ function goToQuiz() {
 }
 function toLanding() { showPage('page-landing'); }
 
-// ─── QUIZ NAVIGATION ────────────────────────────────────────
+// ─── QUIZ NAVIGATION ───────────────────────────────────────
 const qMap = { q1:1, q2:2, q3:3, q4:4, q5:5, q6:6, qOptin:6 };
 
 function showQ(id) {
@@ -864,7 +863,37 @@ function pick(el, qKey, val) {
   setTimeout(() => showQ(next), 320);
 }
 
-// ─── OPTIN SUBMIT ─────────────────────────────────────────────
+// ─── OPTIN SUBMIT ──────────────────────────────────────────
+// ─── CONFIG — swap these when GHL order pages are live ─────
+const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/ucphPUkSafuQF0ZCZh1T/webhook-trigger/54531478-e2bc-406b-9500-35242e28e4ff';
+const CHECKOUT_URLS = {
+  seedling: 'https://link.fastpaydirect.com/payment-link/69ef5c807dd3512d9207b2a2',
+  builder:  'https://link.fastpaydirect.com/payment-link/69ef5e77557558e89e524ca3',
+  operator: 'https://link.fastpaydirect.com/payment-link/69ef5fc0557558e89e524ca5',
+  scaler:   'https://skool.com/money-masters-academy-5443/about'
+};
+const BUMP_URLS = {
+  seedling: 'https://link.fastpaydirect.com/payment-link/69ef5e77557558e89e524ca3',
+  builder:  'https://link.fastpaydirect.com/payment-link/69ef5ed97dd3512d9207b2a6',
+  operator: 'https://skool.com/money-masters-academy-5443/about',
+  scaler:   'https://link.fastpaydirect.com/payment-link/69ef60c87dd3512d9207b2ac'
+};
+const UPSELL_URL   = 'https://link.fastpaydirect.com/payment-link/69fe563e34d67b041e7e8747'; // $97 AI System upsell
+const THANKYOU_URL = 'https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/thank-you.html';
+
+function sendToGHL(payload) {
+  fetch(GHL_WEBHOOK, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(() => {}); // silent fail — never blocks UX
+}
+
+function pixelEvent(name, data) {
+  try { if (window.fbq) fbq('track', name, data || {}); } catch(e) {}
+  try { if (window.gtag) gtag('event', name, data || {}); } catch(e) {}
+}
+
 function submitOptin() {
   const name = document.getElementById('firstName').value.trim();
   const email = document.getElementById('emailInput').value.trim();
@@ -873,17 +902,11 @@ function submitOptin() {
   S.firstName = name;
   S.email = email;
 
-  fetch('https://services.leadconnectorhq.com/hooks/ucphPUkSafuQF0ZCZh1T/webhook-trigger/54531478-e2bc-406b-9500-35242e28e4ff', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      firstName: name,
-      email: email,
-      quizResult: getProfile(),
-      source: 'soul-prosperity-quiz-all-in-one'
-    })
-  }).catch(() => {});
+  // Fire GHL webhook immediately on optin (captures lead even if they abandon)
+  sendToGHL({ firstName: name, email, quizResult: '', stage: 'optin', source: 'soul-prosperity-quiz-all-in-one' });
+  pixelEvent('Lead', { content_name: 'quiz_optin' });
 
+  // Hide all q-screens, show loading
   document.querySelectorAll('.q-screen').forEach(q => q.classList.remove('active'));
   const loader = document.getElementById('quizLoading');
   loader.classList.add('active');
@@ -894,12 +917,16 @@ function submitOptin() {
 
   setTimeout(() => {
     clearInterval(iv);
+    S.profile = getProfile();
+    // Fire second webhook with full profile (updates same contact by email match)
+    sendToGHL({ firstName: name, email, quizResult: S.profile, stage: 'result', source: 'soul-prosperity-quiz-all-in-one' });
+    pixelEvent('ViewContent', { content_name: 'quiz_result', content_category: S.profile });
     buildResults();
     showPage('page-results');
   }, 2600);
 }
 
-// ─── SCORING ────────────────────────────────────────────────
+// ─── SCORING ───────────────────────────────────────────────
 function getProfile() {
   const a = S.answers;
   const score = (a.q1||1) + (a.q2||1) + (a.q3||1) + (a.q5||1) + ((a.q6||1) * 1.5);
@@ -909,7 +936,7 @@ function getProfile() {
   return 'scaler';
 }
 
-// ─── PROFILE DATA ─────────────────────────────────────────────
+// ─── PROFILE DATA ──────────────────────────────────────────
 const profiles = {
   seedling: {
     badge: '🌱 Kingdom Seedling',
@@ -923,7 +950,7 @@ const profiles = {
       { strong: "Set a 7-day deadline.", rest: " Tell someone about it. Accountability is more powerful than motivation." },
       { strong: "Publish imperfect.", rest: " A PDF and a payment link is a real business. Don't wait for perfect to make your first dollar." }
     ],
-    offer: { eyebrow: 'Your recommended starting point', title: "How to Write a 40-Page eBook (Even If You've Never Written a Grocery List)", sub: "The exact framework Terrance Gee used to build his first digital product — written for blue-collar believers who've never done this before.", bullets: ["12-chapter structure that removes every blank-page moment","Habakkuk 2:2 vision framework — write what God placed in your spirit","From PDF to Amazon KDP — step-by-step publishing without tech overwhelm","Viral marketing strategy to launch without paid ads","Faith-based storytelling formulas that convert readers into buyers"], price: '$7', priceSub: 'one-time · instant download', cta: 'Get the eBook for $7 →', url: 'https://link.fastpaydirect.com/payment-link/69ef5c807dd3512d9207b2a2' },
+    offer: { eyebrow: 'Your recommended starting point', title: "How to Write a 40-Page eBook (Even If You've Never Written a Grocery List)", sub: "The exact framework Terrance Gee used to build his first digital product — written for blue-collar believers who've never done this before.", bullets: ["12-chapter structure that removes every blank-page moment","Habakkuk 2:2 vision framework — write what God placed in your spirit","From PDF to Amazon KDP — step-by-step publishing without tech overwhelm","Viral marketing strategy to launch without paid ads","Faith-based storytelling formulas that convert readers into buyers"], price: '$7', priceSub: 'one-time · instant download', cta: 'Get the eBook for $7 →', url: '#' },
     bump: { title: 'Audiobook Bundle — Listen on the Job', desc: 'Get the full audiobook so you can absorb every framework in the truck, on the jobsite, between calls.', price: '+$10' }
   },
   builder: {
@@ -938,7 +965,7 @@ const profiles = {
       { strong: "Set a sales baseline goal.", rest: " $3K/month is 107 people buying your $7 eBook. Break it down until it feels achievable." },
       { strong: "Add the audiobook.", rest: " Give your buyers two ways to consume — reading and listening. It doubles perceived value at almost no cost." }
     ],
-    offer: { eyebrow: 'Your recommended next step', title: 'eBook + Audiobook Bundle', sub: "The eBook for the framework, the audiobook for the job — absorb Kingdom Systems whether you're reading in the evening or grinding on the jobsite.", bullets: ["Full eBook + complete audiobook in one package","Listen in the truck, on the job, or between calls — no extra time required","Faith-based sales and marketing systems that don't feel pushy","Build your first automated income stream alongside your trade business","Storytelling formulas that turn your story into a product that sells"], price: '$17', priceSub: 'one-time · instant access', cta: 'Get the Bundle for $17 →', url: 'https://link.fastpaydirect.com/payment-link/69ef5e77557558e89e524ca3' },
+    offer: { eyebrow: 'Your recommended next step', title: 'eBook + Audiobook Bundle', sub: "The eBook for the framework, the audiobook for the job — absorb Kingdom Systems whether you're reading in the evening or grinding on the jobsite.", bullets: ["Full eBook + complete audiobook in one package","Listen in the truck, on the job, or between calls — no extra time required","Faith-based sales and marketing systems that don't feel pushy","Build your first automated income stream alongside your trade business","Storytelling formulas that turn your story into a product that sells"], price: '$17', priceSub: 'one-time · instant access', cta: 'Get the Bundle for $17 →', url: '#' },
     bump: { title: 'Paperback Bundle — The Physical Copy', desc: 'Add the paperback so you have a physical reference to mark up, share, and put in front of clients and partners.', price: '+$10' }
   },
   operator: {
@@ -953,11 +980,11 @@ const profiles = {
       { strong: "Set up one recurring revenue stream.", rest: " Even 10 people paying $47/month is $470 MRR. That's the foundation of a real business." },
       { strong: "Join a community of operators.", rest: " The fastest path to the next level is people who are already there. Stop learning alone." }
     ],
-    offer: { eyebrow: 'Your recommended next step', title: 'Online Course Bundle — Complete Kingdom Systems', sub: "Everything you need to build the automated, faith-based business infrastructure that runs without you — eBook, audiobook, paperback, and the full video course.", bullets: ["Complete eBook + Audiobook + Paperback + full video course","AI Automation Mastery — build GHL workflows, funnels, and client systems","Kingdom Systems framework built specifically for blue-collar businesses","30-day implementation roadmap with weekly milestones and checkpoints","Lifetime access — every future update included at no charge"], price: '$67', priceSub: 'one-time · lifetime access', cta: 'Get the Course Bundle for $67 →', url: 'https://link.fastpaydirect.com/payment-link/69ef5fc0557558e89e524ca5' },
+    offer: { eyebrow: 'Your recommended next step', title: 'Online Course Bundle — Complete Kingdom Systems', sub: "Everything you need to write, publish, and sell your Kingdom eBook — eBook, audiobook, paperback, and the complete Modern eBook Blueprint Mastery video course.", bullets: ["Complete eBook + Audiobook + Paperback + full video course","Modern eBook Blueprint Mastery — write, publish, and sell your book step by step","Kingdom Systems framework built specifically for blue-collar businesses","30-day implementation roadmap with weekly milestones and checkpoints","Lifetime access — every future update included at no charge"], price: '$67', priceSub: 'one-time · lifetime access', cta: 'Get the Course Bundle for $67 →', url: '#' },
     bump: { title: '7-Day Free Skool Trial — Join the Tribe', desc: 'Add the community so you have accountability and live coaching while you build your Kingdom System.', price: 'Free trial' }
   },
   scaler: {
-    badge: '🚀 Kingdom Scaler',
+    badge: '👑 Kingdom Scaler',
     name: 'The Kingdom Scaler',
     mirror: "You're not building a business anymore — you're building a legacy. You've already proven you can generate income, lead a team, and survive the hard seasons. What you need now isn't another course. You need a community of builders who think at your level, plus the systems to break through your next ceiling.",
     block: "The block at your stage is isolation and ceiling-thinking. You've outgrown your current peer group but haven't yet found your tribe. The next level requires people who can challenge your thinking, hold you accountable, and share real frameworks — not inspiration content.",
@@ -973,7 +1000,7 @@ const profiles = {
   }
 };
 
-// ─── BUILD RESULTS ────────────────────────────────────────────
+// ─── BUILD RESULTS ─────────────────────────────────────────
 function buildResults() {
   S.profile = getProfile();
   const p = profiles[S.profile];
@@ -992,6 +1019,7 @@ function buildResults() {
     <div class="step-content"><strong>${s.strong}</strong>${s.rest}</div></li>
   `).join('');
 
+  // offer — pull URL from config
   const o = p.offer;
   document.getElementById('oEyebrow').textContent = o.eyebrow;
   document.getElementById('oTitle').textContent = o.title;
@@ -1000,26 +1028,36 @@ function buildResults() {
   document.getElementById('oPrice').textContent = o.price;
   document.getElementById('oPriceSub').textContent = o.priceSub;
   document.getElementById('oCta').textContent = o.cta;
-  document.getElementById('oCta').href = o.url;
+  document.getElementById('oCta').href = CHECKOUT_URLS[S.profile] || o.url;
+  document.getElementById('oCta').onclick = () => {
+    pixelEvent('InitiateCheckout', { content_name: S.profile, value: { seedling:7, builder:17, operator:67, scaler:0 }[S.profile] || 0, currency: 'USD' });
+  };
 
+  // bump
   document.getElementById('bumpTitle').textContent = p.bump.title;
   document.getElementById('bumpDesc').textContent = p.bump.desc;
   document.getElementById('bumpPrice').textContent = p.bump.price;
 }
 
-// ─── BUMP TOGGLE ──────────────────────────────────────────────
+// ─── BUMP TOGGLE ───────────────────────────────────────────
 function toggleBump() {
   S.bumpChecked = !S.bumpChecked;
   const cb = document.getElementById('bumpCheck');
   S.bumpChecked ? cb.classList.add('checked') : cb.classList.remove('checked');
+  // Update main CTA URL: bump selected → upgrade URL, else standard URL
+  const cta = document.getElementById('oCta');
+  cta.href = S.bumpChecked
+    ? (BUMP_URLS[S.profile] || CHECKOUT_URLS[S.profile])
+    : CHECKOUT_URLS[S.profile];
 }
 
-// ─── UPSELL ACTIONS ───────────────────────────────────────────
+// ─── UPSELL ACTIONS ────────────────────────────────────────
 function acceptUpsell() {
-  window.location.href = 'https://link.fastpaydirect.com/payment-link/69fe563e34d67b041e7e8747';
+  pixelEvent('Purchase', { content_name: 'ai_system_upsell', value: 97, currency: 'USD' });
+  window.location.href = UPSELL_URL;
 }
 function declineUpsell() {
-  window.location.href = 'https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/thank-you.html';
+  window.location.href = THANKYOU_URL;
 }
 </script>
 </body>
