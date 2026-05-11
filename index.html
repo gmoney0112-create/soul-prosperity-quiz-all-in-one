@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What's Your Kingdom Business Stage? — Soul Prosperity</title>
+<title>What's Your eBook Creator Type? — Soul Prosperity</title>
 
 <!-- ── OG / SOCIAL META ── -->
 <meta name="description" content="Take the free 60-second Kingdom Business Assessment and discover exactly where you are — and the #1 resource to move you forward this week.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="What's Your Kingdom Business Stage? — Soul Prosperity">
+<meta property="og:title" content="What's Your eBook Creator Type? — Soul Prosperity">
 <meta property="og:description" content="Answer 6 questions. Get a personalized Kingdom roadmap. Free for blue-collar Christian business owners.">
 <meta property="og:image" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/og-image.png">
-<meta property="og:url" content="https://quiz.soulprosperity.com">
+<meta property="og:url" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What's Your Kingdom Business Stage?">
+<meta name="twitter:title" content="What's Your eBook Creator Type?">
 <meta name="twitter:description" content="Free 60-second assessment for blue-collar Christian business owners.">
 <meta name="twitter:image" content="https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/og-image.png">
 
@@ -27,7 +27,7 @@ fbq('init', '1655287592408855');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1655287592408855&ev=PageView&noscript=1"/></noscript>
+src="https://www.facebook.com/share/1CeJsi1KKW/?mibextid=wwXIfr"/></noscript>
 
 <!-- ── GOOGLE ANALYTICS — replace G-XXXXXXXXXX with your GA4 ID ── -->
 <!--
@@ -448,6 +448,24 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
   .results-wrap { padding: 40px 20px 80px; }
   .upsell-wrap { padding: 40px 20px 60px; }
 }
+
+/* ── SOCIAL ── */
+.social-row {
+  margin-top: 52px; padding-top: 32px;
+  border-top: 1px solid rgba(201,150,58,0.08);
+  opacity: 0; animation: fadeUp 0.5s ease forwards 1s;
+}
+.social-label { font-size: 12px; color: var(--muted); margin-bottom: 16px; letter-spacing: 0.04em; text-align: center; }
+.social-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.social-link {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,150,58,0.12);
+  border-radius: 8px; padding: 10px 18px;
+  font-size: 13px; color: #9a9088; text-decoration: none;
+  transition: all 0.2s;
+}
+.social-link:hover { border-color: rgba(201,150,58,0.3); color: var(--cream); background: rgba(201,150,58,0.05); }
 </style>
 </head>
 <body>
@@ -464,22 +482,22 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
 
   <section id="page-landing" style="display:contents">
   <div style="max-width:1100px;margin:0 auto;padding:80px 48px 60px 48px;">
-    <span class="hero-eyebrow">60-second kingdom assessment</span>
+    <span class="hero-eyebrow">60-second ebook creator assessment</span>
     <h1 class="hero-headline">
-      Your story is worth<br><em>more than you know.</em><br>Find out what's blocking you.
+      Your story is worth<br><em>more than you know.</em><br>Find out what's stopping you from writing it.
     </h1>
 
     <div class="hero-split">
       <div class="hero-body">
-        <p>Most blue-collar Christian business owners are sitting on a product, a message, and a six-figure business — and they don't even know it. Take this free quiz to discover exactly what's in the way.</p>
+        <p>Most blue-collar Christians are sitting on a story, a message, and a 40-page eBook that could generate real income — and they haven't written a single word. Take this free quiz to find out exactly what's in the way.</p>
         <ul class="promise-list">
-          <li>Discover your Kingdom Business Stage in under 60 seconds</li>
-          <li>Get a personalized breakdown of what's blocking your income</li>
+          <li>Discover your eBook Creator Type in under 60 seconds</li>
+          <li>Get a personalized breakdown of what's blocking you from writing</li>
           <li>Receive a custom 4-step plan built for where you are right now</li>
-          <li>Find out how to turn your story into digital and physical products</li>
+          <li>Find out how to turn your story into a published product that generates income</li>
         </ul>
         <button class="cta-primary" onclick="goToQuiz()">
-          Take the Free Assessment
+          Discover My Creator Type
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <span class="cta-sub">No email required to start · 100% free · Takes 60 seconds</span>
@@ -487,23 +505,23 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
 
       <div class="hero-card">
         <div class="quiz-preview-card">
-          <p class="card-label">Discover your Kingdom Stage</p>
+          <p class="card-label">Discover your eBook Creator Type</p>
           <ul class="persona-list">
             <li class="persona-item" onclick="goToQuiz()">
-              <div class="persona-icon">🌱</div>
-              <div><div class="persona-name">The Kingdom Seedling</div><div class="persona-sub">Has a vision. Hasn't started yet.</div></div>
+              <div class="persona-icon">💭</div>
+              <div><div class="persona-name">The Overthinker</div><div class="persona-sub">Has ideas. Gets stuck before starting.</div></div>
             </li>
             <li class="persona-item" onclick="goToQuiz()">
-              <div class="persona-icon">🔨</div>
-              <div><div class="persona-name">The Grinding Builder</div><div class="persona-sub">Making moves. Income is inconsistent.</div></div>
+              <div class="persona-icon">📖</div>
+              <div><div class="persona-name">The Story Holder</div><div class="persona-sub">Has a story. Doesn't feel qualified.</div></div>
             </li>
             <li class="persona-item" onclick="goToQuiz()">
-              <div class="persona-icon">⚙️</div>
-              <div><div class="persona-name">The Kingdom Operator</div><div class="persona-sub">Running. Needs systems to scale.</div></div>
+              <div class="persona-icon">✍️</div>
+              <div><div class="persona-name">The Inconsistent Starter</div><div class="persona-sub">Started before. Keeps restarting.</div></div>
             </li>
             <li class="persona-item" onclick="goToQuiz()">
-              <div class="persona-icon">👑</div>
-              <div><div class="persona-name">The Kingdom Scaler</div><div class="persona-sub">Ready to build a lasting legacy.</div></div>
+              <div class="persona-icon">🚀</div>
+              <div><div class="persona-name">The Ready Builder</div><div class="persona-sub">Ready to write, publish, and sell.</div></div>
             </li>
           </ul>
           <button class="card-cta" onclick="goToQuiz()">Start My Assessment →</button>
@@ -516,32 +534,32 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
   <div class="proof-bar">
     <div class="proof-stat"><div class="proof-number">2,400+</div><div class="proof-label">Assessments taken</div></div>
     <div class="proof-divider"></div>
-    <div class="proof-stat"><div class="proof-number">4</div><div class="proof-label">Kingdom stages</div></div>
+    <div class="proof-stat"><div class="proof-number">4</div><div class="proof-label">eBook Creator Types</div></div>
     <div class="proof-divider"></div>
-    <div class="proof-stat"><div class="proof-number">40+</div><div class="proof-label">Pages of strategy</div></div>
+    <div class="proof-stat"><div class="proof-number">40+</div><div class="proof-label">Pages of framework</div></div>
     <div class="proof-divider"></div>
     <div class="proof-stat"><div class="proof-number">60s</div><div class="proof-label">To your result</div></div>
   </div>
 
   <div class="section">
     <p class="section-label">How it works</p>
-    <h2 class="section-headline">Personalized Kingdom insight. Not generic advice.</h2>
+    <h2 class="section-headline">Personalized eBook writing insight. Not generic advice.</h2>
     <div class="steps-grid">
-      <div class="step-card"><div class="step-number">01</div><h3 class="step-title">Answer 6 quick questions</h3><p class="step-body">Tell us where your business is, what's stopping you, and what you want. No judgment, no overthinking required — just honest answers.</p></div>
-      <div class="step-card"><div class="step-number">02</div><h3 class="step-title">Get your Kingdom Stage</h3><p class="step-body">Your answers map you to one of four stages — each with a precise diagnosis of what's holding you back and what moves you forward.</p></div>
-      <div class="step-card"><div class="step-number">03</div><h3 class="step-title">Receive your custom roadmap</h3><p class="step-body">Walk away with a clear next step, a recommended resource, and a 4-point action plan built for your exact situation.</p></div>
+      <div class="step-card"><div class="step-number">01</div><h3 class="step-title">Answer 6 quick questions</h3><p class="step-body">Tell us where you are with your eBook, what's stopping you, and how long you've been thinking about it. Honest answers only — no judgment.</p></div>
+      <div class="step-card"><div class="step-number">02</div><h3 class="step-title">Get your eBook Creator Type</h3><p class="step-body">Your answers map you to one of four types — each with a precise diagnosis of what's blocking you from writing and what moves you forward.</p></div>
+      <div class="step-card"><div class="step-number">03</div><h3 class="step-title">Receive your custom writing roadmap</h3><p class="step-body">Walk away with a clear next step, a recommended resource, and a 4-point action plan to get your eBook written, published, and selling.</p></div>
     </div>
   </div>
 
   <div class="types-section">
     <div class="types-inner">
-      <p class="section-label">The four Kingdom stages</p>
+      <p class="section-label">The four eBook Creator Types</p>
       <h2 class="section-headline">Which one are you?</h2>
       <div class="types-grid">
-        <div class="type-card"><span class="type-emoji">🌱</span><div class="type-name">Kingdom Seedling</div><span class="type-tag">Most common starting point</span><p class="type-desc">You have the faith and the vision. You haven't figured out how to turn it into income. The block isn't ability — it's clarity and a starting point.</p></div>
-        <div class="type-card"><span class="type-emoji">🔨</span><div class="type-name">Grinding Builder</div><span class="type-tag">Has momentum, needs consistency</span><p class="type-desc">You've proven the concept and made some money. But income is inconsistent and you're still doing everything manually. You need a system, not more hustle.</p></div>
-        <div class="type-card"><span class="type-emoji">⚙️</span><div class="type-name">Kingdom Operator</div><span class="type-tag">Closest to real scale</span><p class="type-desc">You're running a real business but you're the bottleneck. Every decision goes through you. It's time to build Kingdom Systems — not just a job you own.</p></div>
-        <div class="type-card"><span class="type-emoji">👑</span><div class="type-name">Kingdom Scaler</div><span class="type-tag">Ready to build legacy</span><p class="type-desc">You're past the basics and ready to build something that outlives you. You need community, accountability, and a repeatable system to get to the next level.</p></div>
+        <div class="type-card"><span class="type-emoji">💭</span><div class="type-name">The Overthinker</div><span class="type-tag">Most common starting point</span><p class="type-desc">You have ideas and experiences that could genuinely help people. But you get stuck in your own head before writing a single word. The block isn't ability — it's the waiting.</p></div>
+        <div class="type-card"><span class="type-emoji">📖</span><div class="type-name">The Story Holder</div><span class="type-tag">Has the story, needs the confidence</span><p class="type-desc">You've been through things that could genuinely help someone. But you've been holding it in because you don't feel qualified. Your testimony is your product.</p></div>
+        <div class="type-card"><span class="type-emoji">✍️</span><div class="type-name">The Inconsistent Starter</div><span class="type-tag">Has started, needs the system</span><p class="type-desc">You've started writing before — maybe more than once. But life keeps interrupting. The problem isn't motivation. It's the absence of a system that fits your real life.</p></div>
+        <div class="type-card"><span class="type-emoji">🚀</span><div class="type-name">The Ready Builder</div><span class="type-tag">Ready to write, publish, and sell</span><p class="type-desc">You have the story, the confidence, and the drive. What you need is the complete system and a community of builders doing the same thing at your level.</p></div>
       </div>
     </div>
   </div>
@@ -559,7 +577,7 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
 
   <div class="final-cta">
     <div class="final-cta-inner">
-      <h2>Find out your Kingdom Stage.<br>Get your roadmap.</h2>
+      <h2>Find out your eBook Creator Type.<br>Get your writing roadmap.</h2>
       <p>Takes less than 60 seconds. Personalized results. Completely free.</p>
       <div class="cta-group">
         <button class="cta-primary" onclick="goToQuiz()">
@@ -572,8 +590,8 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
   </div>
 
   <footer>
-    <span>© 2026 Soul Prosperity · Kingdom Systems for Blue-Collar Christian Business Owners</span>
-    <span><a href="./privacy.html" style="color:var(--muted);text-decoration:none;">Privacy Policy</a> · <a href="./terms.html" style="color:var(--muted);text-decoration:none;">Terms</a> · 30-Day Money-Back Guarantee</span>
+    <span>© 2026 Soul Prosperity · eBook Writing Systems for Blue-Collar Christian Business Owners</span>
+    <span><a href="https://gmoney0112-create.github.io/soul-prosperity/privacy.html" style="color:var(--muted);text-decoration:none;" target="_blank">Privacy Policy</a> · <a href="https://gmoney0112-create.github.io/soul-prosperity/terms.html" style="color:var(--muted);text-decoration:none;" target="_blank">Terms</a> · 30-Day Money-Back Guarantee</span>
   </footer>
   </section>
 </div>
@@ -597,13 +615,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <!-- Q1 -->
     <div class="q-screen active" id="q1">
       <div class="q-eyebrow">Question 1 of 6</div>
-      <h2 class="q-headline">Where are you right now in your business journey?</h2>
-      <p class="q-sub">Be honest — there's no wrong answer. This tells us which roadmap to build for you.</p>
+      <h2 class="q-headline">Where are you right now with your eBook?</h2>
+      <p class="q-sub">Be honest — there's no wrong answer. This tells us exactly which roadmap to build for you.</p>
       <div class="options">
-        <div class="opt" onclick="pick(this,'q1',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Just getting started — I have an idea but haven't made real money yet</div></div></div>
-        <div class="opt" onclick="pick(this,'q1',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">I've made some sales but income is inconsistent</div><div class="opt-hint">Under $3K/month</div></div></div>
-        <div class="opt" onclick="pick(this,'q1',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">I have a working business but need better systems</div><div class="opt-hint">$3K–$10K/month</div></div></div>
-        <div class="opt" onclick="pick(this,'q1',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">I'm running a solid operation and ready to scale aggressively</div><div class="opt-hint">$10K+/month</div></div></div>
+        <div class="opt" onclick="pick(this,'q1',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">I have ideas but haven't written a single word yet</div></div></div>
+        <div class="opt" onclick="pick(this,'q1',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">I know I have a story worth telling but I don't know how to package it</div></div></div>
+        <div class="opt" onclick="pick(this,'q1',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">I've started writing but keep stopping and restarting</div></div></div>
+        <div class="opt" onclick="pick(this,'q1',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">I'm ready to write, publish, and sell — I just need the right system</div></div></div>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="toLanding()">← Back</button></div>
     </div>
@@ -611,13 +629,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <!-- Q2 -->
     <div class="q-screen" id="q2">
       <div class="q-eyebrow">Question 2 of 6</div>
-      <h2 class="q-headline">What's your biggest struggle right now?</h2>
-      <p class="q-sub">Pick the one that keeps you up at night.</p>
+      <h2 class="q-headline">What's your biggest block when it comes to writing?</h2>
+      <p class="q-sub">Pick the one that hits closest to home.</p>
       <div class="options">
-        <div class="opt" onclick="pick(this,'q2',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Mindset and confidence — I know I'm called but doubt holds me back</div></div></div>
-        <div class="opt" onclick="pick(this,'q2',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Getting leads and customers consistently</div></div></div>
-        <div class="opt" onclick="pick(this,'q2',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Building systems so my business doesn't depend only on me</div></div></div>
-        <div class="opt" onclick="pick(this,'q2',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">Scaling revenue and building a team while keeping my faith central</div></div></div>
+        <div class="opt" onclick="pick(this,'q2',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Overthinking — I keep second-guessing myself before I even start</div></div></div>
+        <div class="opt" onclick="pick(this,'q2',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Confidence — I don't feel qualified or like my story is worth telling</div></div></div>
+        <div class="opt" onclick="pick(this,'q2',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Consistency — I start strong then life gets in the way</div></div></div>
+        <div class="opt" onclick="pick(this,'q2',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">Marketing — I can write it but I don't know how to sell it</div></div></div>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="prevQ('q2','q1')">← Back</button></div>
     </div>
@@ -625,13 +643,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <!-- Q3 -->
     <div class="q-screen" id="q3">
       <div class="q-eyebrow">Question 3 of 6</div>
-      <h2 class="q-headline">How do you learn best?</h2>
-      <p class="q-sub">This helps us match you with the right format — not just the right message.</p>
+      <h2 class="q-headline">How long have you been thinking about writing an eBook?</h2>
+      <p class="q-sub">No judgment — this helps us understand where you really are.</p>
       <div class="options">
-        <div class="opt" onclick="pick(this,'q3',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">📖 Reading — I want something I can study and reference on my own time</div></div></div>
-        <div class="opt" onclick="pick(this,'q3',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">🎧 Listening — I absorb things on the go (truck, jobsite, between calls)</div></div></div>
-        <div class="opt" onclick="pick(this,'q3',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">🎥 Watching — I need to see it done step by step</div></div></div>
-        <div class="opt" onclick="pick(this,'q3',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">🤝 Community — I need accountability and real people around me</div></div></div>
+        <div class="opt" onclick="pick(this,'q3',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">It just crossed my mind recently</div></div></div>
+        <div class="opt" onclick="pick(this,'q3',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">A few months — I keep putting it off</div></div></div>
+        <div class="opt" onclick="pick(this,'q3',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Over a year — I've started and stopped multiple times</div></div></div>
+        <div class="opt" onclick="pick(this,'q3',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">I'm ready right now — I just need the system</div></div></div>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="prevQ('q3','q2')">← Back</button></div>
     </div>
@@ -639,13 +657,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <!-- Q4 -->
     <div class="q-screen" id="q4">
       <div class="q-eyebrow">Question 4 of 6</div>
-      <h2 class="q-headline">How central is faith in how you run your business?</h2>
-      <p class="q-sub">No judgment. We want to match your values, not assume them.</p>
+      <h2 class="q-headline">Do you believe your story could genuinely help someone?</h2>
+      <p class="q-sub">This matters more than you think — answer honestly.</p>
       <div class="options">
-        <div class="opt" onclick="pick(this,'q4',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">It's everything — I won't separate my faith from my business, full stop</div></div></div>
-        <div class="opt" onclick="pick(this,'q4',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Very important — I pray over decisions and want my business to glorify God</div></div></div>
-        <div class="opt" onclick="pick(this,'q4',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Somewhat — I'm a believer but I also need solid, practical business strategy</div></div></div>
-        <div class="opt" onclick="pick(this,'q4',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">I'm still working through my faith, but I'm open to it</div></div></div>
+        <div class="opt" onclick="pick(this,'q4',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">100% yes — I've been through things that would help a lot of people</div></div></div>
+        <div class="opt" onclick="pick(this,'q4',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Maybe — I think so, but I'm not sure who would care</div></div></div>
+        <div class="opt" onclick="pick(this,'q4',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Probably — but I don't feel qualified to write about it</div></div></div>
+        <div class="opt" onclick="pick(this,'q4',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">Absolutely — and I'm ready to turn it into a product people pay for</div></div></div>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="prevQ('q4','q3')">← Back</button></div>
     </div>
@@ -653,13 +671,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <!-- Q5 -->
     <div class="q-screen" id="q5">
       <div class="q-eyebrow">Question 5 of 6</div>
-      <h2 class="q-headline">Are you doing this alone or do you have support?</h2>
-      <p class="q-sub">Your answer helps us understand whether you need a system, a mentor, or a tribe.</p>
+      <h2 class="q-headline">How often do you actually sit down and write?</h2>
+      <p class="q-sub">Be real — this tells us what kind of system you actually need.</p>
       <div class="options">
-        <div class="opt" onclick="pick(this,'q5',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Completely solo — just me, God, and this grind</div></div></div>
-        <div class="opt" onclick="pick(this,'q5',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">I have some family support but no real business mentorship</div></div></div>
-        <div class="opt" onclick="pick(this,'q5',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">I have a small team or partner but we're figuring it out together</div></div></div>
-        <div class="opt" onclick="pick(this,'q5',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">I invest in coaching and community — I know I can't build legacy alone</div></div></div>
+        <div class="opt" onclick="pick(this,'q5',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Never — I keep meaning to but it doesn't happen</div></div></div>
+        <div class="opt" onclick="pick(this,'q5',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Sometimes — when I feel inspired, but it's not consistent</div></div></div>
+        <div class="opt" onclick="pick(this,'q5',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Weekly — I make time but I lose momentum between sessions</div></div></div>
+        <div class="opt" onclick="pick(this,'q5',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">Consistently — I write regularly and I'm ready to finish and publish</div></div></div>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="prevQ('q5','q4')">← Back</button></div>
     </div>
@@ -667,13 +685,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <!-- Q6 -->
     <div class="q-screen" id="q6">
       <div class="q-eyebrow">Question 6 of 6</div>
-      <h2 class="q-headline">What's your revenue goal for the next 90 days?</h2>
-      <p class="q-sub">Be specific — God honors specificity in your vision. Habakkuk 2:2.</p>
+      <h2 class="q-headline">What would publishing your eBook mean to you?</h2>
+      <p class="q-sub">God honors specificity. What's the real reason behind this?</p>
       <div class="options">
-        <div class="opt" onclick="pick(this,'q6',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Make my first $500–$1,000 from something I built</div></div></div>
-        <div class="opt" onclick="pick(this,'q6',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Hit $3,000–$5,000/month consistently</div></div></div>
-        <div class="opt" onclick="pick(this,'q6',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Break through to $10,000/month</div></div></div>
-        <div class="opt" onclick="pick(this,'q6',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">Scale past $25K/month and build a legacy brand</div></div></div>
+        <div class="opt" onclick="pick(this,'q6',1)"><div class="opt-letter">A</div><div class="opt-body"><div class="opt-text">Proving to myself that I can actually finish something</div></div></div>
+        <div class="opt" onclick="pick(this,'q6',2)"><div class="opt-letter">B</div><div class="opt-body"><div class="opt-text">Helping someone else avoid what I went through</div></div></div>
+        <div class="opt" onclick="pick(this,'q6',3)"><div class="opt-letter">C</div><div class="opt-body"><div class="opt-text">Building an income stream that doesn't depend on trading my time</div></div></div>
+        <div class="opt" onclick="pick(this,'q6',4)"><div class="opt-letter">D</div><div class="opt-body"><div class="opt-text">All three — legacy, impact, and income from one published product</div></div></div>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="prevQ('q6','q5')">← Back</button></div>
     </div>
@@ -682,13 +700,13 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <div class="q-screen" id="qOptin">
       <div class="optin-card">
         <div class="optin-eyebrow">Almost there — one last step</div>
-        <h2 class="optin-headline">Where should we send your Kingdom Stage results?</h2>
-        <p class="optin-sub">Your personalized breakdown, action plan, and recommended resources are ready. Enter your name and email to unlock them — we'll also send you a copy.</p>
+        <h2 class="optin-headline">Where should we send your eBook Creator Type results?</h2>
+        <p class="optin-sub">Your personalized Creator Type breakdown, writing roadmap, and recommended first step are ready. Enter your name and email to unlock them — we'll also send you a copy.</p>
         <div class="optin-fields">
           <input type="text" id="firstName" placeholder="Your first name" />
           <input type="email" id="emailInput" placeholder="Your best email address" />
         </div>
-        <button class="optin-btn" onclick="submitOptin()">Reveal My Kingdom Stage →</button>
+        <button class="optin-btn" onclick="submitOptin()">Reveal My Creator Type →</button>
         <p class="optin-trust">No spam. Ever. Unsubscribe any time.</p>
       </div>
       <div class="q-nav"><button class="back-btn" onclick="prevQ('qOptin','q6')">← Back</button></div>
@@ -712,8 +730,8 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
 
     <div class="result-header">
       <div class="result-eyebrow">Your personalized result</div>
-      <div class="persona-badge" id="rBadge">The Kingdom Seedling</div>
-      <h1 class="result-title" id="rTitle">You are <em id="rName">The Kingdom Seedling</em></h1>
+      <div class="persona-badge" id="rBadge">The Overthinker</div>
+      <h1 class="result-title" id="rTitle">You are <em id="rName">The Overthinker</em></h1>
     </div>
 
     <div class="result-section" style="animation-delay:0.1s">
@@ -755,7 +773,7 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <div class="offer-section">
       <p class="offer-eyebrow" id="oEyebrow">Your Recommended First Step</p>
       <h2 class="offer-title" id="oTitle">How to Write a 40-Page eBook</h2>
-      <p class="offer-sub" id="oSub">The system that matches your Kingdom Stage exactly.</p>
+      <p class="offer-sub" id="oSub">The eBook writing system that matches your Creator Type exactly.</p>
       <ul class="offer-bullets" id="oBullets"></ul>
       <div class="price-block">
         <div class="price-amount" id="oPrice">$7</div>
@@ -764,6 +782,25 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
       <a href="#" class="result-cta" id="oCta">Get Instant Access →</a>
       <p class="cta-guarantee">30-day money-back guarantee · No questions asked</p>
     </div>
+
+
+  <div class="social-row" style="margin-top:40px;padding-top:28px;border-top:1px solid rgba(201,150,58,0.08);text-align:center;">
+    <p style="font-size:12px;color:#6b6460;margin-bottom:14px;letter-spacing:0.04em;">Follow the Kingdom journey</p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+      <a href="https://www.tiktok.com/@alwaysbeenblessed3" class="social-link" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(201,150,58,0.12);border-radius:8px;padding:10px 18px;font-size:13px;color:#9a9088;text-decoration:none;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+        TikTok
+      </a>
+      <a href="https://www.instagram.com/terrance.gee.505/" class="social-link" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(201,150,58,0.12);border-radius:8px;padding:10px 18px;font-size:13px;color:#9a9088;text-decoration:none;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/share/1CeJsi1KKW/" class="social-link" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(201,150,58,0.12);border-radius:8px;padding:10px 18px;font-size:13px;color:#9a9088;text-decoration:none;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
 
     <footer style="margin-top:48px;border-top:1px solid rgba(201,150,58,0.1);padding-top:24px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)">
       <span>© 2026 Soul Prosperity</span>
@@ -780,18 +817,18 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
     <div class="congrats-bar">✓ Your purchase is confirmed — check your email for instant access</div>
 
     <p class="eyebrow">One-time offer — this page only</p>
-    <h1 class="upsell-h1">Let AI Build Your<br>Kingdom Business <em>With</em> You</h1>
-    <p class="lede">You have the framework. Now get the AI engine that removes every roadblock — 100+ prompts, done-for-you scripts, and a 7-day launch system built specifically for blue-collar Christian business owners.</p>
+    <h1 class="upsell-h1">Write Your Book <em>Faster</em><br>With AI as Your Co-Author</h1>
+    <p class="lede">You have the framework. Now get the AI Writing Toolkit — 100+ done-for-you prompts, chapter templates, launch scripts, and a 7-day writing plan that takes you from blank page to published book in one week.</p>
     <p class="urgency-note">⚡ This offer is only available right now and will not appear again</p>
 
     <div class="offer-card">
-      <h2 class="what-youll-get">Everything in the AI Kingdom Business System:</h2>
+      <h2 class="what-youll-get">Everything in the Kingdom eBook AI Writing Toolkit:</h2>
       <ul class="feature-list">
-        <li class="feature-item"><div class="feature-icon">🤖</div><div><div class="feature-title">100+ AI Writing & Business Prompts</div><div class="feature-desc">Chapter openers, sales copy, email sequences, and social hooks — one prompt for every step of your Kingdom business build.</div></div></li>
-        <li class="feature-item"><div class="feature-icon">📋</div><div><div class="feature-title">Kingdom Systems Blueprint Templates</div><div class="feature-desc">Fill-in-the-blank automation maps, funnel structures, and GHL workflow diagrams for all four Kingdom Stages.</div></div></li>
-        <li class="feature-item"><div class="feature-icon">💰</div><div><div class="feature-title">Sales Copy Toolkit</div><div class="feature-desc">Landing page headlines, email subject lines, and social media hooks written for blue-collar Christian entrepreneurs.</div></div></li>
-        <li class="feature-item"><div class="feature-icon">🎯</div><div><div class="feature-title">7-Day Launch Checklist + Timeline</div><div class="feature-desc">A step-by-step daily plan from "blank page" to "first sale" — know exactly what to do every morning.</div></div></li>
-        <li class="feature-item"><div class="feature-icon">📱</div><div><div class="feature-title">30 Social Media Video Scripts</div><div class="feature-desc">TikTok and Reels scripts in your brand voice — hook, body, and CTA — ready to record today without a writer.</div></div></li>
+        <li class="feature-item"><div class="feature-icon">✍️</div><div><div class="feature-title">100+ AI Writing Prompts for eBook Authors</div><div class="feature-desc">Chapter openers, story transitions, faith anchors, humor breaks, calls to action — one prompt for every moment you get stuck. Copy, paste, done.</div></div></li>
+        <li class="feature-item"><div class="feature-icon">📖</div><div><div class="feature-title">12-Chapter Fill-in-the-Blank Templates</div><div class="feature-desc">Every chapter pre-structured with Story → Lesson → Faith Factor → Action Step. You fill in your story. AI fills in the rest.</div></div></li>
+        <li class="feature-item"><div class="feature-icon">🚀</div><div><div class="feature-title">7-Day "Blank Page to Published" Writing Plan</div><div class="feature-desc">A day-by-day schedule that fits in 20 minutes a day. Day 1: outline. Day 7: published. No overwhelm. No excuses.</div></div></li>
+        <li class="feature-item"><div class="feature-icon">💰</div><div><div class="feature-title">eBook Launch Copy Pack</div><div class="feature-desc">20 email subject lines, 10 social media hooks, and 3 sales page headlines — all written for blue-collar Christian authors. Launch without hiring a copywriter.</div></div></li>
+        <li class="feature-item"><div class="feature-icon">📱</div><div><div class="feature-title">30 TikTok & Reels Scripts to Sell Your Book</div><div class="feature-desc">30-60 second video scripts in your voice that drive viewers to buy. Record one a day for a month. No blank screen, no writer's block.</div></div></li>
       </ul>
 
       <hr class="divider">
@@ -799,15 +836,15 @@ hr.divider { border: none; border-top: 1px solid rgba(201,150,58,0.12); margin: 
       <div class="price-row"><span class="price-lbl">Today only</span><span class="price-today">$97</span></div>
       <p class="price-note">One payment. Instant access. Yours forever.</p>
 
-      <button class="cta-yes" onclick="acceptUpsell()">Yes — Add the AI System for $97 →</button>
-      <a class="cta-no" onclick="declineUpsell()">No thanks, I'll build everything from scratch</a>
+      <button class="cta-yes" onclick="acceptUpsell()">Yes — Add the AI Writing Toolkit for $97 →</button>
+      <a class="cta-no" onclick="declineUpsell()">No thanks, I'll write everything from scratch</a>
     </div>
 
     <div class="faq-section">
       <h3 class="faq-heading">Quick answers</h3>
-      <div class="faq-item"><p class="faq-q">Do I need technical skills to use this?</p><p class="faq-a">No. Everything is copy-paste ready. You don't need a ChatGPT account or any tools — though it works even better if you do use AI.</p></div>
-      <div class="faq-item"><p class="faq-q">Is this different from what I already purchased?</p><p class="faq-a">Yes. Your purchase gives you the strategy and structure. This toolkit gives you the actual fuel — prompts, templates, and scripts — so execution is faster and less painful.</p></div>
-      <div class="faq-item"><p class="faq-q">What if I already have a business idea?</p><p class="faq-a">Even better. These tools plug directly into whatever you're working on. They work for any trade, any niche, any blue-collar business.</p></div>
+      <div class="faq-item"><p class="faq-q">Do I need to know how to use AI tools?</p><p class="faq-a">No. Every prompt is written so you can copy and paste it into ChatGPT, Claude, or any AI tool and get a usable result in under 2 minutes. No technical skills required.</p></div>
+      <div class="faq-item"><p class="faq-q">Is this different from the eBook framework I just bought?</p><p class="faq-a">Yes. The framework teaches you the structure. This toolkit gives you the actual words — prompts, templates, and scripts — so you never face a blank page. They work together.</p></div>
+      <div class="faq-item"><p class="faq-q">What if I haven't started writing yet?</p><p class="faq-a">Even better. This toolkit is designed for people at the very beginning. The 7-day plan starts with day 1 and walks you through every step. You'll have a complete draft by day 7.</p></div>
     </div>
   </div>
 </div>
@@ -878,7 +915,7 @@ const BUMP_URLS = {
   operator: 'https://skool.com/money-masters-academy-5443/about',
   scaler:   'https://link.fastpaydirect.com/payment-link/69ef60c87dd3512d9207b2ac'
 };
-const UPSELL_URL   = 'https://link.fastpaydirect.com/payment-link/69fe563e34d67b041e7e8747'; // $97 AI System upsell
+const UPSELL_URL   = 'https://link.fastpaydirect.com/payment-link/69fe563e34d67b041e7e8747'; // $97 Kingdom eBook AI Writing Toolkit
 const THANKYOU_URL = 'https://gmoney0112-create.github.io/soul-prosperity-quiz-all-in-one/thank-you.html';
 
 function sendToGHL(payload) {
@@ -939,61 +976,61 @@ function getProfile() {
 // ─── PROFILE DATA ──────────────────────────────────────────
 const profiles = {
   seedling: {
-    badge: '🌱 Kingdom Seedling',
-    name: 'The Kingdom Seedling',
-    mirror: "You have the vision, the faith, and the hunger — but you're still figuring out how to turn that into a real business. You've been waiting to feel ready, waiting for the perfect moment, waiting to know enough. Here's the truth nobody told you: the people making money from their stories had the same doubts you have right now. They just started anyway.",
+    badge: '💭 Overthinker',
+    name: 'The Overthinker',
+    mirror: "You have ideas — real ones. Experiences that could genuinely help people. But somewhere between the idea and the page, you get stuck in your own head. You keep waiting to feel ready, qualified, or inspired. Here's what nobody told you: the waiting IS the block.",
     block: "What's really blocking you isn't ability or talent — it's the absence of a clear starting point. You're trying to build the whole house before you've poured the foundation. You don't need a perfect plan. You need one specific next step, and the courage to take it before you feel fully ready.",
     faith: "Habakkuk 2:2 says 'Write the vision and make it plain on tablets.' Notice it didn't say 'only if you have everything figured out.' God isn't waiting for you to be polished. He's waiting for you to be obedient. Your story — the real, unfiltered version — is exactly what someone needs right now.",
     steps: [
-      { strong: "Choose one message.", rest: " What's the single biggest thing you've survived, learned, or overcome? That story is your first product." },
-      { strong: "Write the outline first.", rest: " Don't start with Chapter 1. Start with 12 chapter titles. That's your whole book in one page." },
-      { strong: "Set a 7-day deadline.", rest: " Tell someone about it. Accountability is more powerful than motivation." },
-      { strong: "Publish imperfect.", rest: " A PDF and a payment link is a real business. Don't wait for perfect to make your first dollar." }
+      { strong: "Stop planning, start writing.", rest: " Open a blank doc right now and write your 12 chapter titles. Not perfect titles — just 12 topics you could write about. That's your whole book on one page." },
+      { strong: "Write how you talk.", rest: " Don't try to sound like an author. Write like you're explaining something to a friend across the table. That's what converts." },
+      { strong: "Give yourself a 7-day deadline.", rest: " Tell one person about it. Accountability is more powerful than motivation. Habakkuk 2:2 — write the vision and make it plain." },
+      { strong: "Publish before it's perfect.", rest: " A $7 PDF with a payment link is a real product. Your first eBook doesn't have to be your best eBook. It just has to exist." }
     ],
-    offer: { eyebrow: 'Your recommended starting point', title: "How to Write a 40-Page eBook (Even If You've Never Written a Grocery List)", sub: "The exact framework Terrance Gee used to build his first digital product — written for blue-collar believers who've never done this before.", bullets: ["12-chapter structure that removes every blank-page moment","Habakkuk 2:2 vision framework — write what God placed in your spirit","From PDF to Amazon KDP — step-by-step publishing without tech overwhelm","Viral marketing strategy to launch without paid ads","Faith-based storytelling formulas that convert readers into buyers"], price: '$7', priceSub: 'one-time · instant download', cta: 'Get the eBook for $7 →', url: '#' },
+    offer: { eyebrow: 'Your Recommended First Step', title: "How to Write a 40-Page eBook (Even If You've Never Written a Grocery List)", sub: "The exact framework Terrance Gee used to build his first digital product — written for blue-collar believers who've never done this before.", bullets: ["12-chapter structure that removes every blank-page moment","Habakkuk 2:2 vision framework — write what God placed in your spirit","From PDF to Amazon KDP — step-by-step publishing without tech overwhelm","Viral marketing strategy to launch without paid ads","Faith-based storytelling formulas that convert readers into buyers"], price: '$7', priceSub: 'one-time · instant download', cta: 'Get the eBook for $7 →', url: '#' },
     bump: { title: 'Audiobook Bundle — Listen on the Job', desc: 'Get the full audiobook so you can absorb every framework in the truck, on the jobsite, between calls.', price: '+$10' }
   },
   builder: {
-    badge: '🔨 Grinding Builder',
-    name: 'The Grinding Builder',
-    mirror: "You've proven the concept — you've made money from something you built, and you know this works. But it's inconsistent, it's exhausting, and every week feels like starting over. You're not lazy. You're not missing talent. You're missing a system that works while you're working.",
+    badge: '📖 Story Holder',
+    name: 'The Story Holder',
+    mirror: "You've been through real things. Seasons that would have broken most people. And somewhere in the back of your mind you know your story has value — but you've been holding it in. Not because you don't have something to say. Because you don't feel qualified to say it.",
     block: "The real block is that you're still doing everything manually and emotionally. Every sale is a hustle. Every lead requires your direct energy. What you need isn't more motivation — you need an automated machine that fills the gap between your effort and your income.",
-    faith: "Proverbs 21:5 says 'The plans of the diligent lead surely to abundance.' That's not just about working hard — it's about working smart, with a plan that God can multiply. The grind is honorable. But God didn't call you to be exhausted. He called you to build something that multiplies.",
+    faith: "Revelation 12:11 says 'They overcame by the word of their testimony.' Your story isn't baggage — it's a weapon. The things you survived, the lessons you learned, the faith that kept you going — that's exactly what someone else needs to read right now. Your testimony is your product.",
     steps: [
-      { strong: "Identify your one repeatable offer.", rest: " Stop selling multiple things. Pick the one thing that sells most consistently and go all in." },
-      { strong: "Build a simple email sequence.", rest: " Five emails that sell your offer automatically is more powerful than 50 manual DMs." },
-      { strong: "Set a sales baseline goal.", rest: " $3K/month is 107 people buying your $7 eBook. Break it down until it feels achievable." },
-      { strong: "Add the audiobook.", rest: " Give your buyers two ways to consume — reading and listening. It doubles perceived value at almost no cost." }
+      { strong: "Decide you are qualified.", rest: " Revelation 12:11 — they overcame by the word of their testimony. Your story is not too small, too ordinary, or too imperfect. That's exactly what makes it powerful." },
+      { strong: "Pick one specific person.", rest: " Who is the one person your story could help most? Write to that one person. When you write for everyone, you connect with no one." },
+      { strong: "Write the messy first draft.", rest: " Don't edit while you write. Don't reread what you wrote yesterday. Just keep moving forward. Messy and done beats polished and never started." },
+      { strong: "Use the audiobook to absorb the framework.", rest: " Listen while you drive, work, or cook. By the time you finish it once, you'll have everything you need to write your own." }
     ],
-    offer: { eyebrow: 'Your recommended next step', title: 'eBook + Audiobook Bundle', sub: "The eBook for the framework, the audiobook for the job — absorb Kingdom Systems whether you're reading in the evening or grinding on the jobsite.", bullets: ["Full eBook + complete audiobook in one package","Listen in the truck, on the job, or between calls — no extra time required","Faith-based sales and marketing systems that don't feel pushy","Build your first automated income stream alongside your trade business","Storytelling formulas that turn your story into a product that sells"], price: '$17', priceSub: 'one-time · instant access', cta: 'Get the Bundle for $17 →', url: '#' },
+    offer: { eyebrow: 'Your Recommended Next Step', title: 'eBook + Audiobook Bundle', sub: "The eBook for the framework, the audiobook for the job — absorb Kingdom Systems whether you're reading in the evening or grinding on the jobsite.", bullets: ["Full eBook + complete audiobook in one package","Listen in the truck, on the job, or between calls — no extra time required","Faith-based sales and marketing systems that don't feel pushy","Build your first automated income stream alongside your trade business","Storytelling formulas that turn your story into a product that sells"], price: '$17', priceSub: 'one-time · instant access', cta: 'Get the Bundle for $17 →', url: '#' },
     bump: { title: 'Paperback Bundle — The Physical Copy', desc: 'Add the paperback so you have a physical reference to mark up, share, and put in front of clients and partners.', price: '+$10' }
   },
   operator: {
-    badge: '⚙️ Kingdom Operator',
-    name: 'The Kingdom Operator',
-    mirror: "You're making real money and running a real business. But you're the bottleneck. Every system runs through you, every decision lands on your desk, and your growth ceiling is your own bandwidth. You've built a job that pays well — now it's time to build a Kingdom System that runs without you.",
+    badge: '✍️ Inconsistent Starter',
+    name: 'The Inconsistent Starter',
+    mirror: "You've started. Maybe more than once. You have a Google Doc, a notes app full of ideas, maybe even a few chapters. But life keeps interrupting and you keep restarting. The problem isn't motivation — it's the absence of a system that works around your real life.",
     block: "The block isn't knowledge or work ethic. It's that you've built everything around your presence. The moment you step away, revenue dips. That means you don't have a business — you have a high-paying freelance operation. The fix is automating the parts that don't need you.",
     faith: "Proverbs 16:3 says 'Commit your work to the LORD, and your plans will be established.' You've committed the hustle. Now it's time to commit the architecture — build systems that run under His order, not just your energy. Kingdom Systems aren't just efficient. They're obedient.",
     steps: [
-      { strong: "Map your current funnel.", rest: " Write down every step from lead to paid customer. Every manual step is an automation opportunity." },
-      { strong: "Automate your top of funnel.", rest: " A quiz funnel running on GHL can generate and qualify leads while you're on the job." },
-      { strong: "Set up one recurring revenue stream.", rest: " Even 10 people paying $47/month is $470 MRR. That's the foundation of a real business." },
-      { strong: "Join a community of operators.", rest: " The fastest path to the next level is people who are already there. Stop learning alone." }
+      { strong: "Build a 20-minute daily writing habit.", rest: " Not when you feel inspired. Every day. Same time. Even on the days you don't want to. 20 minutes × 7 days = your complete first draft." },
+      { strong: "Use the chapter template.", rest: " Every chapter follows the same structure: Story → Lesson → Faith Factor → Action Step. You fill in your story. The template does the rest." },
+      { strong: "Stop restarting from scratch.", rest: " Pick up wherever you left off — even if it's been months. The chapters don't care about the gap. Neither does your reader." },
+      { strong: "Tell someone your deadline.", rest: " Proverbs 21:5 — the plans of the diligent lead to abundance. Write the deadline down. Tell one person. That's accountability you can't ignore." }
     ],
     offer: { eyebrow: 'Your recommended next step', title: 'Online Course Bundle — Complete Kingdom Systems', sub: "Everything you need to write, publish, and sell your Kingdom eBook — eBook, audiobook, paperback, and the complete Modern eBook Blueprint Mastery video course.", bullets: ["Complete eBook + Audiobook + Paperback + full video course","Modern eBook Blueprint Mastery — write, publish, and sell your book step by step","Kingdom Systems framework built specifically for blue-collar businesses","30-day implementation roadmap with weekly milestones and checkpoints","Lifetime access — every future update included at no charge"], price: '$67', priceSub: 'one-time · lifetime access', cta: 'Get the Course Bundle for $67 →', url: '#' },
     bump: { title: '7-Day Free Skool Trial — Join the Tribe', desc: 'Add the community so you have accountability and live coaching while you build your Kingdom System.', price: 'Free trial' }
   },
   scaler: {
-    badge: '👑 Kingdom Scaler',
-    name: 'The Kingdom Scaler',
-    mirror: "You're not building a business anymore — you're building a legacy. You've already proven you can generate income, lead a team, and survive the hard seasons. What you need now isn't another course. You need a community of builders who think at your level, plus the systems to break through your next ceiling.",
+    badge: '🚀 Ready Builder',
+    name: 'The Ready Builder',
+    mirror: "You know you have something worth publishing. You have the story, the confidence, and the drive. What you need now is the complete system — write it, publish it, market it, sell it — and a community of builders who are doing the same thing at your level.",
     block: "The block at your stage is isolation and ceiling-thinking. You've outgrown your current peer group but haven't yet found your tribe. The next level requires people who can challenge your thinking, hold you accountable, and share real frameworks — not inspiration content.",
     faith: "Jeremiah 29:11 says 'For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you a future and a hope.' You've proven you can start. You've proven you can survive. Now it's time to build something that outlives you.",
     steps: [
-      { strong: "Find your community.", rest: " You need builders who operate at your level or above. Isolation is the number one limiter for scalers." },
-      { strong: "Document your systems.", rest: " Everything in your head that isn't written down is a liability. Turn your knowledge into processes." },
-      { strong: "Add recurring revenue.", rest: " A Skool community, a membership, or a retainer model adds MRR that compounds every single month." },
-      { strong: "Think legacy, not just income.", rest: " What does this business look like in 10 years? Build toward that now — not later." }
+      { strong: "Write your 12-chapter outline today.", rest: " You're ready. Open a blank doc and write 12 titles. Doesn't matter if they're perfect — you can refine them later. What matters is starting today, not tomorrow." },
+      { strong: "Set a publish date.", rest: " Pick a specific date 30 days from now. Put it on your calendar. Tell the community. Jeremiah 29:11 — He has plans to prosper you. Act like it." },
+      { strong: "Use the AI Writing Toolkit alongside the course.", rest: " Don't write from scratch. Use the prompts to generate chapter drafts, the templates to structure each section, and the scripts to market it before it's even done." },
+      { strong: "Join the community and go public.", rest: " Post your book idea in Money Masters Academy today. Public commitment converts intention into action. Your tribe is waiting." }
     ],
     offer: { eyebrow: 'Your recommended next step', title: 'Money Masters Academy — Skool Community', sub: "Live coaching calls, a private community of Christian business owners at your level, and the complete Kingdom Systems curriculum — all in one place.", bullets: ["Live monthly coaching calls with Terrance Gee","Private community of blue-collar Christian business owners at your level","Full Kingdom Systems curriculum — complete course library included","Accountability partners who understand the faith-and-business grind","Annual plan available: $247/year — save $317 vs. monthly"], price: 'Free 7-day trial', priceSub: 'then $47/month · cancel anytime', cta: 'Start My Free 7-Day Trial →', url: 'https://skool.com/money-masters-academy-5443/about' },
     bump: { title: 'Lifetime Access — Pay Once, Own It Forever', desc: "Skip the monthly fee entirely. One payment of $497 gives you lifetime access to everything — no recurring charges, ever.", price: '+$497' }
@@ -1053,7 +1090,7 @@ function toggleBump() {
 
 // ─── UPSELL ACTIONS ────────────────────────────────────────
 function acceptUpsell() {
-  pixelEvent('Purchase', { content_name: 'ai_system_upsell', value: 97, currency: 'USD' });
+  pixelEvent('Purchase', { content_name: 'ai_writing_toolkit_upsell', value: 97, currency: 'USD' });
   window.location.href = UPSELL_URL;
 }
 function declineUpsell() {
