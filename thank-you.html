@@ -191,7 +191,7 @@ footer a:hover { color: var(--gold); }
     <div class="countdown-bar-track">
       <div class="countdown-bar-fill" id="countdownBar"></div>
     </div>
-    <p class="countdown-text">Redirecting in <span id="countdownNum">5</span> seconds…</p>
+    <p class="countdown-text">Redirecting in <span id="countdownNum">30</span> seconds…</p>
     <a href="#" class="btn-now" id="downloadNowBtn">Take Me to My Downloads →</a>
   </div>
 
@@ -267,7 +267,7 @@ function getTier() {
 const tier    = getTier();
 const config  = TIER_MAP[tier] || TIER_MAP['7'];
 const destURL = `${DOWNLOADS_BASE}#${config.anchor}`;
-const DELAY_MS = 5000;
+const DELAY_MS = 30000; // 30 seconds
 
 document.getElementById('productName').textContent = config.name;
 document.getElementById('downloadNowBtn').href = destURL;
